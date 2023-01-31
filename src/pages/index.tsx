@@ -7,6 +7,11 @@ import Seo from '../components/seo'
 
 import videos from '../data/videos.json'
 
+type VideoProps = {
+  isPlaying: boolean
+  play()
+  requestFullscreen()
+}
 
 const Video = styled.video`
   height: 100vh;
@@ -17,10 +22,10 @@ const Video = styled.video`
 
 const IndexPage = () => {
   const videoRef = useRef(null)
-  const video = videoRef.current
+  const video = videoRef.current as unknown as VideoProps
 
   if (video) {
-    if (!video.isPlaying) {
+    if (video.isPlaying) {
       video.play()
     }
 
@@ -32,11 +37,11 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title='Home' />
-      <Video controls autoPlay loop ref={ videoRef }
-             muted={ false }
-             width={ '100%' }
-             height={ '100%' }>
-        { videos.map(({ src, type }, index) => <source src={ src } key={ index } type={ type } />) }
+      <Video controls autoPlay loop ref={videoRef}
+        muted={false}
+        width={'100%'}
+        height={'100%'}>
+        {videos.map(({ src, type }, index) => <source src={src} key={index} type={type} />)}
       </Video>
     </Layout>
   )

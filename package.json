@@ -3,7 +3,7 @@
   "private": true,
   "description": "",
   "version": "0.0.1",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tyler Garlick",
   "dependencies": {
     "gatsby": "^4.15.1",
     "gatsby-plugin-gatsby-cloud": "^4.15.0",
@@ -38,9 +38,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/TylerGarlick/tv"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/TylerGarlick/tv/issues"
   }
 }
