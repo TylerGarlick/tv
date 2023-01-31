@@ -1,10 +1,6 @@
 [
   {
-    "src": "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-    "type": "video/mp4"
-  },
-  {
-    "src": "https://media.w3.org/2010/05/sintel/trailer_hd.mp",
+    "src": "/static/background-cf0007305fc319aaf64ec4eccf04a8bd.mp4",
     "type": "video/mp4"
   }
 ]
