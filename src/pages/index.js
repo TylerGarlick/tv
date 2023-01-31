@@ -7,6 +7,10 @@ import Seo from "../components/seo"
 
 import videos from '../data/videos.json'
 
+import backgroundSource from '../videos/background.mp4'
+
+console.log(backgroundSource)
+
 
 
 const Video = styled.video`
@@ -32,7 +36,8 @@ const IndexPage = () => {
     <Layout>
       <Seo title="Home" />
       <Video controls autoPlay loop ref={videoRef}>
-        {videos.map(({ src, type }, index) => <source src={src} key={index} type={type} />)}
+        <source src="../videos/background.mp4" type="video/mp4" />
+        {/* {videos.map(({ src, type }, index) => <source src={src} key={index} type={type} />)} */}
 
         {/* <source
           src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
